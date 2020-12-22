@@ -1,0 +1,19 @@
+.list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: inline-flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.item:only-child {
+  margin-right: 0;
+}
+
+.button {
+  padding: 0;
+  padding: 5px 10px;
+}
