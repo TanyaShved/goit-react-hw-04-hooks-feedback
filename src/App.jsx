@@ -10,18 +10,16 @@ const App = () => {
   const [bad, setBad] = useState(0);
 
   const setItem = option => {
-    switch (option) {
-      case 'good':
-        return setGood(good + 1);
+    if (option === 'good') {
+      return setGood(good + 1);
+    }
 
-      case 'neutral':
-        return setNeutral(neutral + 1);
+    if (option === 'neutral') {
+      return setNeutral(neutral + 1);
+    }
 
-      case 'bad':
-        return setBad(bad + 1);
-
-      default:
-        alert('Oops, something went wrong!');
+    if (option === 'bad') {
+      return setBad(bad + 1);
     }
   };
 
